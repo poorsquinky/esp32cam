@@ -3,9 +3,12 @@
 This is based on the demo code for the ESP32 camera module, with some tweaks:
 
 * Prometheus exporter for monitoring CPU temperature, wifi signal strength, frames per second, and power consumption
+* syslog support for the same metrics (hardcoded IP for now)
 * Watchdog that restarts the device if frame count stalls or WiFi disconnects for more than 5 minutes
 * Set the default frame size to VGA for my personal needs
-* probably some other stuff I'm forgetting right now
+* maximum FPS cap
+* hostname by mac address (hardcoded for now)
+* probably some other stuff I'm forgetting
 
 
 Known issues:
